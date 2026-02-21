@@ -12,6 +12,7 @@
     <title>Memory Match</title>
   </head>
   <body>
+    <!-- container starts here  -->
     <div class="container">
       <div class="header">
         <h1>
@@ -22,19 +23,36 @@
             <div class="stat-label">Moves</div>
             <div class="stat-value">0</div>
           </div>
-        </div>
-        <div class="stats">
           <div class="stat">
             <div class="stat-label">Time</div>
             <div class="stat-value">0:00</div>
           </div>
-        </div>
-        <div class="stats">
           <div class="stat">
-            <div class="stat-label">Matches</div>
+            <div class="stat-label">Matchess</div>
             <div class="stat-value">0/8</div>
           </div>
+        </div>              
         </div>
+      </div>  <!-- container ends here  -->
+
+      <div class="game-board" id="gameBoard"></div>
+       <!-- controls start here  -->
+      <div class="controls">
+        <button class="btn" onclick="newGame()">
+         <i class="fas fa-redo"></i>  New Game
+        </button>
+      </div>
+    </div> <!-- controls end here  -->
+    <div class="modal" id="winModal">
+      <div class="modal-content">
+        <h2><i class="fas fa-trophy"></i> Win! <i class="fas fa-trophy"></i></h2>
+        <p>
+          Moves:
+           <span id="finalMoves"></span> <br>
+          Time: 
+           <span id="finalTime"></span> 
+        </p>
+        <button class="btn" onclick="newGame()">Play Again!</button>
       </div>
     </div>
   </body>
