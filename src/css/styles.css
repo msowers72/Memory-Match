@@ -88,6 +88,10 @@ h1 {
   transform: rotateY(180deg) scale(1.08);
 }
 
+.card.matched {
+  pointer-events: none;
+}
+
 .card-front, .card-back {
   position: absolute;
   width: 100%;
